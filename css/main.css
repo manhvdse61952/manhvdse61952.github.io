@@ -1,0 +1,1077 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(243, 240, 240);
+}
+
+
+/********************************************** Format for top-header *************************************************/
+
+#top-header {
+    z-index: 999;
+    width: 100%;
+    height: 5.3125em;
+    /*85px from viewport size 1366px*/
+    background: linear-gradient(to bottom, #272b58 0%, #2a3060 50%, #272b58 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: table;
+}
+
+#logo-header {
+    vertical-align: middle;
+    width: 25%;
+    display: table-cell;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0.7em 1.25em;
+    /*11.2px 20px*/
+}
+
+#menu-header {
+    display: table-cell;
+    width: 50%;
+    /*683px*/
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 5.3125em;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#menu-header > ul {
+    list-style-type: none;
+    font-size: 1.25em;
+    display: table;
+    width: 100%;
+}
+
+#menu-header > ul > li {
+    width: 33.33%;
+    display: table-cell;
+}
+
+#menu-header > ul > li > a {
+    display: table-cell;
+    width: 33.33%;
+    transition: all 0.3s ease;
+}
+
+#menu-header > ul > li:nth-of-type(1) > a:hover {
+    background-image: url(../img/menu-history.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-header > ul > li:nth-of-type(2) > a:hover {
+    background: url(../img/menu-land.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-header > ul > li:nth-of-type(3) > a:hover {
+    background: url(../img/menu-culture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-header > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+#social-header {
+    /*    display: table-cell;*/
+}
+
+#social-header > ul {
+    display: table;
+    width: 100%;
+    margin-top: 1.15em;
+}
+
+#social-header > ul > li {
+    display: table-cell;
+    font-size: 1.25em;
+    text-align: center;
+    width: 1.875em;
+    height: 2.5em;
+    line-height: 2.5em;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+#social-header > ul > li:hover {
+    background: #3b5998;
+}
+
+#social-header > ul > li > a {
+    color: white;
+}
+
+
+/********* Format for introduce-money ************/
+
+#introduce-money {
+    width: 100%;
+    height: 49.5em;
+    position: relative;
+    top: 2.8125em;
+    background: url(../img/c150-logo-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#introduce-money-title {
+    
+    position: relative;
+    top: 1.875em;
+    width: 50%;
+    margin: 2.5em auto;
+
+}
+
+#introduce-money-title > h2 {
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#introduce-money-title > h3 {
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+}
+
+#introduce-money-slider {
+    width: 70%;
+    background-color: yellow;
+    margin: 0 auto;
+}
+
+#introduce-money-slider > img {
+    
+    position: absolute;
+    width: 70%;
+    animation-name: slide-show;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+}
+
+#introduce-money-slider > img:nth-of-type(1) {
+    transform: rotateY(0) scaleY(0);
+    animation-delay: 0s;
+}
+
+#introduce-money-slider > img:nth-of-type(2) {
+    transform: rotateY(90deg);
+    animation-delay: 5s;
+}
+
+@keyframes slide-show {
+    0% {
+        transform: rotateY(90deg);
+    }
+    16.66666666666667% {
+        transform: rotateY(90deg) scaleX(1);
+    }
+    50% {
+        transform: rotateY(0) scaleX(1);
+    }
+    66.66666666666667% {
+        transform: rotateY(90deg) scaleX(0);
+    }
+    100% {
+        transform: rotateY(180deg) scaleX(0);
+    }
+}
+
+#introduce-money-notice {
+    
+    width: 40%;
+    background: #fff;
+    position: relative;
+    border: 5px solid #ccc;
+    outline: 1px solid #ccc;
+    transition: all 0.5s ease;
+
+}
+
+#introduce-money-notice:hover {
+    outline: 2px solid #ccc;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+#introduce-money-notice > h4 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+}
+
+
+/**************************************************** CATEGORY **************************************************************/
+
+#category {
+    
+    position: relative;
+    top: 2.8125em;
+    height: 60em;
+    margin-bottom: 12.5em;
+
+}
+
+#category h1 {
+    
+    color: #fff;
+    font-size: 9em;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 30%;
+    width: 70%;
+    text-align: center;
+    left: 15%;
+
+}
+
+
+/**OUR HISTORY**/
+
+#our-history {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/our-history.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/**OUR LAND**/
+
+#our-land {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/our-land.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*our-culture*/
+
+#our-culture {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/our-culture.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/******************************************** BODY-OUR-HISTORY ********************************************************/
+
+#body-our-history {
+    width: 100%;
+    position: relative;
+    height: 33.125em;
+    margin-bottom: 12.5em;
+}
+
+#total {
+    width: 85%;
+    height: 100%;
+}
+
+#info {
+    
+    width: 85%;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+#info-img-main {
+    width: 50%;
+    height: 100%;
+}
+
+#note {
+    width: 40%;
+    height: 60%;
+    margin-top: 10%;
+    text-align: center;
+    color: #545252;
+}
+
+#note > h2 {
+    font-size: 2.7em;
+    margin-bottom: 0.5em;
+}
+
+#note > p {
+        font-size: 1.1em;
+}
+
+#info-img-slider {
+    width: 5%;
+    height: 100%;
+}
+
+#body-our-history:hover #total {
+    transform: scale(1) translateX(0);
+}
+
+
+/******** Macphail, Macdonald, Forming, Hall *********/
+
+#macphail {
+    
+    height: 100%;
+    background-image: url("../img/c150-background-macphail.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#macdonald {
+    
+    height: 100%;
+    background-image: url("../img/c150-background-macdonald.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#forming {
+    height: 100%;
+    background-image: url("../img/c150-background-forming-canada.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hall {
+    height: 100%;
+    background-image: url("../img/c150-background-hall-of-honour.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#macphail > #total,
+#macdonald > #total,
+#forming > #total,
+#hall > #total {
+    float: left;
+}
+
+#macphail #info,
+#macdonald #info,
+#forming #info,
+#hall #info {
+    float: left;
+}
+
+#macphail #info #info-img-main,
+#macdonald #info #info-img-main,
+#forming #info #info-img-main,
+#hall #info #info-img-main {
+    float: left;
+}
+
+#macphail #info #note,
+#macdonald #info #note,
+#forming #info #note,
+#hall #info #note {
+    float: left;
+    margin-left: 5%;
+}
+
+#macphail #info-img-slider,
+#macdonald #info-img-slider,
+#forming #info-img-slider,
+#hall #info-img-slider {
+    float: left;
+}
+
+
+
+
+/********* Cartier, Gladstone, memorial **********/
+
+#cartier {
+    height: 100%;
+    background-image: url("../img/c150-background-cartier.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gladstone {
+    height: 100%;
+    background-image: url("../img/c150-background-gladstone.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#memorial {
+    height: 100%;
+    background-image: url("../img/c150-background-memorial-chamber.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cartier > #total,
+#gladstone > #total,
+#memorial > #total {
+    float: right;
+}
+
+#cartier #info,
+#gladstone #info,
+#memorial #info {
+    float: right;
+}
+
+#cartier #info #info-img-main,
+#gladstone #info #info-img-main,
+#memorial #info #info-img-main {
+    float: right;
+}
+
+#cartier #info #note,
+#gladstone #info #note,
+#memorial #info #note {
+    float: right;
+    margin-right: 5%;
+}
+
+#cartier #info-img-slider,
+#gladstone #info-img-slider,
+#memorial #info-img-slider {
+    float: right;
+}
+
+
+
+
+/********************************************* BODY-OUR-LAND ******************************************************/
+#body-our-land {
+    width: 100%;
+    height: 62.5em;
+    position: relative;
+}
+
+#body-our-land-item {
+    width: 50%;
+    height: 40%;
+    position: relative;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+#body-our-land #body-our-land-item:nth-of-type(1) {
+    background-image: url("../img/c150-background-mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body-our-land #body-our-land-item:nth-of-type(2) {
+    background-image: url("../img/c150-background-prairies.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body-our-land #body-our-land-item:nth-of-type(3) {
+    background-image: url("../img/c150-background-northern-lights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body-our-land #body-our-land-item:nth-of-type(4) {
+    background-image: url("../img/c150-background-atlantic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#body-our-land-item: after {
+    content: ' ';
+    clear: both;
+}
+
+#body-our-land-item img {
+    width: 50%;
+    height: 65%;
+    margin-left: 25%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+#body-our-land-item h2 {
+    z-index: 2;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #272b58;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 10px 10px 30px #fff;
+    opacity: 0;
+    transform: scaleY(0) rotate(90deg);
+    transition: all 0.5s ease;
+}
+
+#body-our-land-item:hover h2 {
+    opacity: 1;
+    transform: scaleY(1) rotate(0deg);
+}
+
+#body-our-land-item:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/***************************** BODY OUR CULTURE **********************/
+
+#body-our-culture {
+    width: 100%;
+    height: 37.5em;
+    margin-bottom: 7em;
+    position: relative;
+    background-image: url("../img/c150-background-maple-leaf.jpg");
+    background-size: cover;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    width: 20%;
+    height: 25%;
+    display: block;
+}
+
+#img1 img:nth-of-type(1),
+#img2 img:nth-of-type(1),
+#img3 img:nth-of-type(1),
+#img4 img:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+}
+
+#notice {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 30%;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+    transform: scaleY(0);
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+#body-our-culture h2 {
+    position: absolute;
+    font-size: 2em;
+    text-shadow: 10px 10px 30px #000;
+    color: #fff;
+    top: 10%;
+    left: 35%;
+    z-index: 100;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+#background {
+    position: absolute;
+    width: 82%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all 0.3s ease;
+}
+
+    #img1:hover #background,
+    #img1:hover h2,
+    #img1:hover #notice,
+    #img2:hover #background,
+    #img2:hover h2,
+    #img2:hover #notice,
+    #img3:hover #background,
+    #img3:hover h2,
+    #img3:hover #notice,
+    #img4:hover #background,
+    #img4:hover h2,
+    #img4:hover #notice {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover {
+    cursor: pointer;
+}
+
+#body-our-culture h4 {
+    position: absolute;
+    font-size: 1.5em;
+    top: -7%;
+    left: 2%;
+    font-style: italic;
+}
+
+
+/******************************* FOOTER ***********************/
+
+footer {
+    width: 100%;
+    height: 12.5em;
+    background-color: #31345f;
+    display: table;
+}
+
+#info-footer {
+    width: 33.33%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*********************************** REPONSIVE ***********************************/
+
+
+/****** Viewport 1 -> 640px ********/
+
+#social-header {
+    display: none;
+}
+
+#introduce-money-title {
+    position: relative;
+    top: 1.875em;
+    width: 80%;
+    margin: 2.5em auto;
+}
+
+#introduce-money-slider > img {
+    position: absolute;
+    width: 85%;
+    animation-name: slide-show;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+#introduce-money-notice {
+    width: 80%;
+    background: #fff;
+    margin-top: 60%;
+    margin-left: 10%;
+    border: 5px solid #ccc;
+    outline: 1px solid #ccc;
+    transition: all 0.5s ease;
+}
+
+#category h1 {
+    color: #fff;
+    font-size: 7em;
+    font-weight: bold;
+    text-shadow: 10px 10px 30px #000;
+    position: absolute;
+    top: 30%;
+    width: 70%;
+    text-align: center;
+    left: 15%;
+}
+
+#category {
+    position: relative;
+    top: 2.8125em;
+    height: 40em;
+    margin-bottom: 12.5em;
+}
+
+#body-our-history {
+    width: 100%;
+    position: relative;
+    height: 22em;
+    margin-bottom: 10em;
+}
+
+#total {
+    width: 100%;
+    height: 100%;
+}
+
+#macphail #total,
+#macdonald #total,
+#forming #total,
+#hall #total {    
+    transform: scale(1);
+}
+
+#cartier #total,
+#gladstone #total,
+#memorial #total {   
+    transform: scale(1);
+}
+
+#info-img-slider {
+    width: 0;
+    height: 0;
+}
+
+#info {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#note > h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+}
+
+#note > p {
+    font-size: 1em;
+}
+
+#body-our-land {
+    width: 100%;
+    height: 62.5em;
+    position: relative;
+    margin-bottom: 10em;
+}
+
+#body-our-land-item {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+#body-our-land-item img {
+    width: 50%;
+    height: 65%;
+    margin-left: 25%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+#body-our-land-item h2 {
+    z-index: 2;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #272b58;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 10px 10px 30px #fff;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+#body-our-culture {
+    width: 100%;
+    height: 30em;
+    margin-bottom: 7em;
+    position: relative;
+    background-image: url("../img/c150-background-maple-leaf.jpg");
+    background-size: cover;
+}
+
+#body-our-culture h2 {
+    position: absolute;
+    font-size: 2em;
+    text-shadow: 10px 10px 30px #000;
+    color: #fff;
+    top: 10%;
+    left: 35%;
+    z-index: 100;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    width: 30%;
+    height: 25%;
+    display: block;
+}
+
+#notice {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 25%;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+    transform: scaleY(0);
+    transition: all 0.3s ease;
+    transition-delay: 0;
+}
+
+#img1:hover #background,
+#img2:hover #background,
+#img3:hover #background,
+#img4:hover #background {
+    opacity: 0;
+}
+
+
+/************* Viewport 641px -> 1024px *************/
+
+
+@media screen and (min-width: 641px) {
+    #introduce-money-notice {
+        width: 70%;
+        background: #fff;
+        margin-top: 55%;
+        margin-left: 15%;
+    }
+    #category h1 {
+        font-size: 8em;
+    }
+    #category {
+        height: 50em;
+    }
+    #body-our-history {
+        height: 27em;
+    }
+    #total {
+        width: 70%
+    }
+    #macphail #total,
+#macdonald #total,
+#forming #total,
+#hall #total { 
+    transform: scale(0) translateX(-100%);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.3s;
+}
+    #cartier #total,
+#gladstone #total,
+#memorial #total {   
+    transform: scale(0) translateX(100%);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.3s;
+}
+    #info {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    #note > h2 {
+        font-size: 1.7em;
+    }
+    #macphail {
+        height: 100%;
+        background-image: url("../img/c150-background-macphail.jpg");
+        background-attachment: fixed;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #macdonald {
+        height: 100%;
+        background-image: url("../img/c150-background-macdonald.jpg");
+        background-attachment: fixed;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #macphail #total,
+    #macdonald #total,
+    #forming #total,
+    #hall #total {
+        transform: scale(0) translateX(-100%);
+        transition: all 0.5s ease-in-out;
+    }
+    #cartier #total,
+    #gladstone #total,
+    #memorial #total {
+        transform: scale(0) translateX(-100%);
+        transition: all 0.5s ease-in-out;
+    }
+    #body-our-land {
+        height: 50em;
+    }
+    #body-our-land-item {
+        width: 50%;
+        height: 50%;
+        float: left;
+    }
+    #body-our-land-item img {
+        width: 60%;
+        height: 50%;
+        margin-left: 20%;
+    }
+    #body-our-land-item h2 {
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+    #body-our-culture {
+        height: 32em;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4 {
+        width: 25%;
+    }
+    #notice {
+        width: 55%;
+        height: 85%;
+        top: 15%;
+        right: 10%;
+    }
+}
+
+
+/************* Viewport > 1024px **************/
+
+
+@media screen and (min-width: 1025px) {
+    #social-header {
+        display: table-cell;
+    }
+    #introduce-money-title {
+        width: 50%;
+    }
+    #introduce-money-slider > img {
+        width: 70%;
+    }
+    #introduce-money-notice {
+        width: 40%;
+        margin-top: 38%;
+        margin-left: 30%;
+    }
+    #category h1 {
+        font-size: 9em;
+    }
+    #category {
+        height: 60em;
+    }
+    #body-our-history {
+        height: 33.125em;
+        margin-bottom: 12.5em;
+    }
+    #total {
+        width: 85%
+    }
+    #info {
+        width: 85%;
+    }
+    #info-img-slider {
+        width: 5%;
+        height: 100%;
+    }
+    #note > h2 {
+        font-size: 2.7em;
+        margin-bottom: 0.5em;
+    }
+    #note > p {
+        font-size: 1.1em;
+    }
+    #macphail #total,
+    #macdonald #total,
+    #forming #total,
+    #hall #total {
+        transition-delay: 0.3s;
+    }
+    #cartier #total,
+    #gladstone #total,
+    #memorial #total {
+        transition-delay: 0.3s;
+    }
+    #body-our-land {
+        height: 62.5em;
+        margin-bottom: 12.5em;
+    }
+    #body-our-land-item img {
+        height: 60%;
+    }
+    #body-our-land-item h2 {
+        padding-bottom: 5%;
+        transform: scale(0) rotate(70deg);
+    }
+    #body-our-culture {
+        height: 36em;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4 {
+        width: 18%;
+    }
+    #notice {
+        width: 40%;
+        height: 70%;
+        top: 30%;
+        right: 0;
+        transition-delay: 0.3s;
+    }
+    #img1:hover #background,
+    #img1:hover h2,
+    #img1:hover #notice,
+    #img2:hover #background,
+    #img2:hover h2,
+    #img2:hover #notice,
+    #img3:hover #background,
+    #img3:hover h2,
+    #img3:hover #notice,
+    #img4:hover #background,
+    #img4:hover h2,
+    #img4:hover #notice {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+*/

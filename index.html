@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -21,29 +22,37 @@
             <div id="menu-header">
                 <ul>
                     <li>
-                        <a href="#our-history">Our History</a>
+                        <a href="#" id="our-history-scroll">Our History</a>
                     </li>
                     <li>
-                        <a href="#our-land">Our Land</a>
+                        <a href="#" id="our-land-scroll">Our Land</a>
                     </li>
                     <li>
-                        <a href="#our-culture">Our Culture</a>
+                        <a href="#" id="our-culture-scroll">Our Culture</a>
                     </li>
                 </ul>
             </div>
-            <div id="social-header">
+            <div id="bar-menu">
+                <div id="bar-menu-first-click" data-toggle="collapse" data-target="#social-header">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+                <div id="bar-menu-click-again" data-toggle="collapse" data-target="#social-header"></div>
+            </div>
+            <div id="social-header" class="collapse">
                 <ul>
                     <li>
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://vi-vn.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/?lang=vi"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        <a href="https://accounts.google.com/"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
@@ -51,198 +60,246 @@
     </header>
 
     <!--Main body-->
-    <section id="introduce-money">
-        <div id="introduce-money-title">
-            <h2>Celebrating Canada's 150th</h2>
-            <h3>1867 - 2017</h3>
-        </div>
-        <div id="introduce-money-slider">
-            <img src="img/money-front.png">
-            <img src="img/money-back.png">
-        </div>
-        <div id="introduce-money-notice">
-            <h4>Canada 150 commemorative bank note available at
+    <div id="body-wrapper">
+        <section id="introduce-money">
+            <div id="introduce-money-title">
+                <h2>Celebrating Canada's 150th</h2>
+                <h3>1867 - 2017</h3>
+            </div>
+            <div id="introduce-money-slider">
+                <img src="img/money-front.png">
+                <img src="img/money-back.png">
+            </div>
+            <div id="introduce-money-notice">
+                <h4>Canada 150 commemorative bank note available at
                 financial institutions starting on 1 June 2017</h4>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <div id="category">
-        <section id="our-history">
-            <h1>OUR HISTORY</h1>
+        <div id="category">
+            <section id="our-history">
+                <h1>OUR HISTORY</h1>
+            </section>
+        </div>
+
+        <!-- Macphail -->
+        <section id="body-our-history">
+            <div id="macphail">
+                <div id="total">
+                    <div id="info">
+                        <img src="img/c150-note-macphail.jpg" id="info-img-main">
+                        <div id="note">
+                            <h2>Agnes Macphail</h2>
+                            <p>Agnes Macphail was a champion of equality and human rights who, in 1921, became the first woman elected to the House of Commons in Canada. Entering politics to represent the interests of farmers in her riding, Macphail became an advocate of the working class and defender of marginalized groups such as women, miners, immigrants and prisoners.</p>
+                        </div>
+                    </div>
+                    <img src="img/c150-slider-left-side.png" id="info-img-slider">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cartier -->
+        <section id="body-our-history">
+            <div id="cartier">
+                <div id="total">
+                    <div id="info">
+                        <img src="img/c150-note-cartier.jpg" id="info-img-main">
+                        <div id="note">
+                            <h2>Sir George-Étienne Cartier</h2>
+                            <p>Sir George-Étienne Cartier was a principal architect of Canadian federalism and a proponent of Confederation as a means of safeguarding French Canada and other minorities. Cartier led Quebec into the Dominion and later participated in the expansion of Canada west to the Pacific and north to the Arctic Ocean.</p>
+                        </div>
+                    </div>
+                    <img src="img/c150-slider-right-side.png" id="info-img-slider">
+                </div>
+            </div>
+        </section>
+
+        <!-- Macdonald -->
+        <section id="body-our-history">
+            <div id="macdonald">
+                <div id="total">
+                    <div id="info">
+                        <img src="img/c150-note-macdonald.jpg" id="info-img-main">
+                        <div id="note">
+                            <h2>Sir John A. Macdonald</h2>
+                            <p>Sir John A. Macdonald was a Father of Confederation and Canada’s first prime minister, 1867-73 and 1878-91. Under Macdonald’s leadership and vision, the Dominion of Canada was founded, grew and expanded until it stretched from sea to sea to sea.</p>
+                        </div>
+                    </div>
+                    <img src="img/c150-slider-left-side.png" id="info-img-slider">
+                </div>
+            </div>
+        </section>
+
+        <!-- James Gladstone -->
+        <section id="body-our-history">
+            <div id="gladstone">
+                <div id="total">
+                    <div id="info">
+                        <img src="img/c150-note-gladstone.jpg" id="info-img-main">
+                        <div id="note">
+                            <h2>James Gladstone</h2>
+                            <p>James Gladstone, a member of the Kainai (Blood) First Nation whose Blackfoot name is Akay-na-muka, meaning “Many guns,” committed himself to the betterment of Indigenous peoples in Canada. In 1958, he became Canada’s first senator of First Nations origin.</p>
+                        </div>
+                    </div>
+                    <img src="img/c150-slider-right-side.png" id="info-img-slider">
+                </div>
+            </div>
+        </section>
+
+        <!-- Forming Canada -->
+        <section id="body-our-history">
+            <div id="forming">
+                <div id="total">
+                    <div id="info">
+                        <img src="img/c150-note-forming-canada.jpg" id="info-img-main">
+                        <div id="note">
+                            <h2>Forming Canada</h2>
+                            <p>The names of all of Canada’s provinces and territories and the dates when they entered Confederation are repeated in English and French across the top and bottom of the large window. The order in which the names appear follows the official order of precedence and lists the provinces followed by the territories.</p>
+                        </div>
+                    </div>
+                    <img src="img/c150-slider-left-side.png" id="info-img-slider">
+                </div>
+            </div>
+        </section>
+
+        <!-- Memorial Chamber Arch -->
+        <section id="body-our-history">
+            <div id="memorial">
+                <div id="total">
+                    <div id="info">
+                        <img src="img/c150-note-memorial-chamber.jpg" id="info-img-main">
+                        <div id="note">
+                            <h2>Memorial Chamber Arch</h2>
+                            <p>This arch is located inside the Memorial Chamber of the Peace Tower on Parliament Hill. The Memorial Chamber was dedicated in 1927 to all Canadians who died in military service during the First World War. The chamber has since come to honour all Canadian men and women who gave their lives in service to their country.</p>
+                        </div>
+                    </div>
+                    <img src="img/c150-slider-right-side.png" id="info-img-slider">
+                </div>
+            </div>
+        </section>
+
+        <!-- Hall of Honour -->
+        <section id="body-our-history">
+            <div id="hall">
+                <div id="total">
+                    <div id="info">
+                        <img src="img/c150-note-hall-of-honour.jpg" id="info-img-main">
+                        <div id="note">
+                            <h2>Hall of Honour</h2>
+                            <p>The Hall of Honour is the central corridor of the Centre Block on Parliament Hill. This neo-Gothic passageway, with its remarkable ribbed vault ceiling, leads from Confederation Hall to the Library of Parliament. The House of Commons is directly to its west, the Senate Chamber to its east.</p>
+                        </div>
+                    </div>
+                    <img src="img/c150-slider-left-side.png" id="info-img-slider">
+                </div>
+            </div>
+        </section>
+
+        <div id="category">
+            <section id="our-land">
+                <h1>OUR LAND</h1>
+            </section>
+        </div>
+
+        <section id="body-our-land">
+            <div class="body-our-land-item">
+                <div class="bol-check-click-1">
+                    <h2>Coast Mountains</h2>
+                    <img id="bol-img-1" src="img/c150-note-mountains.jpg">
+                </div>
+            </div>
+            <div class="body-our-land-item">
+                <div class="bol-check-click-2">
+                    <h2>The Prairies</h2>
+                    <img id="bol-img-2" src="img/c150-note-prairies.jpg">
+                </div>
+            </div>
+            <div class="body-our-land-item">
+                <div class="bol-check-click-3">
+                    <h2>The Northern Lights</h2>
+                    <img id="bol-img-3" src="img/c150-note-northern-lights.jpg">
+                </div>
+            </div>
+            <div class="body-our-land-item">
+                <div class="bol-check-click-4">
+                    <h2>The Atlantic Coast</h2>
+                    <img id="bol-img-4" src="img/c150-note-atlantic.jpg">
+                </div>
+            </div>
+        </section>
+       
+        <div id="category">
+            <section id="our-culture">
+                <h1>OUR CULTURE</h1>
+            </section>
+        </div>
+
+        <section id="body-our-culture">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="illustrated" src="./img/c150-background-arrowsash.jpg">
+                        <div class="carousel-caption">
+                            <h3>Assomption Sash</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="notice" src="./img/c150-note-arrowsash.jpg">
+                        <div class="carousel-caption">
+                            <h3>Assomption Sash printed on money</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="illustrated" src="./img/c150-background-leaves.jpg">
+                        <div class="carousel-caption">
+                            <h3>The Provinces and Territories</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="notice" src="./img/c150-note-leaves.jpg">
+                        <div class="carousel-caption">
+                            <h3>The Provinces and Territories printed on money</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="illustrated" src="./img/c150-background-owl.jpg">
+                        <div class="carousel-caption">
+                            <h3>Owl's Bouquet</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="notice" src="./img/c150-note-owl.jpg">
+                        <div class="carousel-caption">
+                            <h3>Owl's Bouquet printed on money</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="illustrated" src="./img/c150-background-coat-of-arms.jpg">
+                        <div class="carousel-caption">
+                            <h3>Canada's Coat of Arms</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="notice" src="./img/c150-note-coat-of-arms.jpg">
+                        <div class="carousel-caption">
+                            <h3>Canada's Coat of Arms printed on money</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </section>
     </div>
-
-    <!-- Macphail -->
-    <section id="body-our-history">
-        <div id="macphail">
-            <div id="total">
-                <div id="info">
-                    <img src="img/c150-note-macphail.jpg" id="info-img-main">
-                    <div id="note">
-                        <h2>Agnes Macphail</h2>
-                        <p>Agnes Macphail was a champion of equality and human rights who, in 1921, became the first woman elected to the House of Commons in Canada. Entering politics to represent the interests of farmers in her riding, Macphail became an advocate of the working class and defender of marginalized groups such as women, miners, immigrants and prisoners.</p>
-                    </div>
-                </div>
-                <img src="img/c150-slider-left-side.png" id="info-img-slider">
-            </div>
-        </div>
-    </section>
-
-    <!-- Cartier -->
-    <section id="body-our-history">
-        <div id="cartier">
-            <div id="total">
-                <div id="info">
-                    <img src="img/c150-note-cartier.jpg" id="info-img-main">
-                    <div id="note">
-                        <h2>Sir George-Étienne Cartier</h2>
-                        <p>Sir George-Étienne Cartier was a principal architect of Canadian federalism and a proponent of Confederation as a means of safeguarding French Canada and other minorities. Cartier led Quebec into the Dominion and later participated in the expansion of Canada west to the Pacific and north to the Arctic Ocean.</p>
-                    </div>
-                </div>
-                <img src="img/c150-slider-right-side.png" id="info-img-slider">
-            </div>
-        </div>
-    </section>
-
-    <!-- Macdonald -->
-    <section id="body-our-history">
-        <div id="macdonald">
-            <div id="total">
-                <div id="info">
-                    <img src="img/c150-note-macdonald.jpg" id="info-img-main">
-                    <div id="note">
-                        <h2>Sir John A. Macdonald</h2>
-                        <p>Sir John A. Macdonald was a Father of Confederation and Canada’s first prime minister, 1867-73 and 1878-91. Under Macdonald’s leadership and vision, the Dominion of Canada was founded, grew and expanded until it stretched from sea to sea to sea.</p>
-                    </div>
-                </div>
-                <img src="img/c150-slider-left-side.png" id="info-img-slider">
-            </div>
-        </div>
-    </section>
-
-    <!-- James Gladstone -->
-    <section id="body-our-history">
-        <div id="gladstone">
-            <div id="total">
-                <div id="info">
-                    <img src="img/c150-note-gladstone.jpg" id="info-img-main">
-                    <div id="note">
-                        <h2>James Gladstone</h2>
-                        <p>James Gladstone, a member of the Kainai (Blood) First Nation whose Blackfoot name is Akay-na-muka, meaning “Many guns,” committed himself to the betterment of Indigenous peoples in Canada. In 1958, he became Canada’s first senator of First Nations origin.</p>
-                    </div>
-                </div>
-                <img src="img/c150-slider-right-side.png" id="info-img-slider">
-            </div>
-        </div>
-    </section>
-
-    <!-- Forming Canada -->
-    <section id="body-our-history">
-        <div id="forming">
-            <div id="total">
-                <div id="info">
-                    <img src="img/c150-note-forming-canada.jpg" id="info-img-main">
-                    <div id="note">
-                        <h2>Forming Canada</h2>
-                        <p>The names of all of Canada’s provinces and territories and the dates when they entered Confederation are repeated in English and French across the top and bottom of the large window. The order in which the names appear follows the official order of precedence and lists the provinces followed by the territories.</p>
-                    </div>
-                </div>
-                <img src="img/c150-slider-left-side.png" id="info-img-slider">
-            </div>
-        </div>
-    </section>
-
-    <!-- Memorial Chamber Arch -->
-    <section id="body-our-history">
-        <div id="memorial">
-            <div id="total">
-                <div id="info">
-                    <img src="img/c150-note-memorial-chamber.jpg" id="info-img-main">
-                    <div id="note">
-                        <h2>Memorial Chamber Arch</h2>
-                        <p>This arch is located inside the Memorial Chamber of the Peace Tower on Parliament Hill. The Memorial Chamber was dedicated in 1927 to all Canadians who died in military service during the First World War. The chamber has since come to honour all Canadian men and women who gave their lives in service to their country.</p>
-                    </div>
-                </div>
-                <img src="img/c150-slider-right-side.png" id="info-img-slider">
-            </div>
-        </div>
-    </section>
-
-    <!-- Hall of Honour -->
-    <section id="body-our-history">
-        <div id="hall">
-            <div id="total">
-                <div id="info">
-                    <img src="img/c150-note-hall-of-honour.jpg" id="info-img-main">
-                    <div id="note">
-                        <h2>Hall of Honour</h2>
-                        <p>The Hall of Honour is the central corridor of the Centre Block on Parliament Hill. This neo-Gothic passageway, with its remarkable ribbed vault ceiling, leads from Confederation Hall to the Library of Parliament. The House of Commons is directly to its west, the Senate Chamber to its east. The Centre Block is where national issues are considered and examined, and where legislation is introduced, debated and passed into law.</p>
-                    </div>
-                </div>
-                <img src="img/c150-slider-left-side.png" id="info-img-slider">
-            </div>
-        </div>
-    </section>
-
-    <div id="category">
-        <section id="our-land">
-            <h1>OUR LAND</h1>
-        </section>
-    </div>
-
-    <section id="body-our-land">
-        <div id="body-our-land-item">
-            <h2>Coast Mountains</h2>
-            <img src="img/c150-note-mountains.jpg">          
-        </div>
-        <div id="body-our-land-item">
-            <h2>The Prairies</h2>
-            <img src="img/c150-note-prairies.jpg">          
-        </div>
-        <div id="body-our-land-item">
-            <h2>The Northern Lights</h2>
-            <img src="img/c150-note-northern-lights.jpg">        
-        </div>
-        <div id="body-our-land-item">
-            <h2>The Atlantic Coast</h2>
-            <img src="img/c150-note-atlantic.jpg">
-        </div>
-    </section>
-
-    <div id="category">
-        <section id="our-culture">
-            <h1>OUR CULTURE</h1>
-        </section>
-    </div>
-
-    <section id="body-our-culture">
-        <div id="img1">
-            <img src="./img/c150-background-arrowsash.jpg">
-            <h2 id="h1">Assomption Sash</h2>
-            <img id="notice" src="./img/c150-note-arrowsash.jpg">
-            <img id="background" src="./img/c150-background-arrowsash.jpg">
-        </div>
-        <div id="img2">
-            <img src="./img/c150-background-leaves.jpg">
-            <h2 id="h2">The Provinces and Territories</h2>
-            <img id="notice" src="./img/c150-note-leaves.jpg">
-            <img id="background" src="./img/c150-background-leaves.jpg">
-        </div>
-        <div id="img3">
-            <img src="./img/c150-background-owl.jpg">
-            <h2 id="h3">Owl's Bouquet</h2>
-            <img id="notice" src="./img/c150-note-owl.jpg">
-            <img id="background" src="./img/c150-background-owl.jpg">
-        </div>
-        <div id="img4">
-            <img src="./img/c150-background-coat-of-arms.jpg">
-            <h2 id="h4">Canada's Coat of Arms</h2>
-            <img id="notice" src="./img/c150-note-coat-of-arms.jpg">
-            <img id="background" src="./img/c150-background-coat-of-arms.jpg">
-        </div>
-        <h4>*Choose one image in left side</h4>
-    </section>
-    <footer>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    <footer>
         <div id="info-footer">
             <img src="img/logo.png">
         </div>
@@ -253,6 +310,10 @@
             <img src="img/c150-canada-logo-footer.png">
         </div>
     </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
